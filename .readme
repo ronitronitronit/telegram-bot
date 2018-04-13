@@ -1,9 +1,9 @@
-# i'm using "now" to run the bot. you can see the current deployment with the following command:
-#
-# now ls --all telegram-bot
-#
-# if i delete the old deployment (command: now rm [the url]) and add a new one (command: now), it works fine again.
-# so i think there's something wrong with now, something about it being inactive for a period of time
-#
-# anyway, to set the webhook:
-# curl -F "url=[the now url]/new-message"  https://api.telegram.org/bot540539721:AAHzt6XkCTLwwupyqWRjdhTRiMCSrK7YRNU/setWebhook
+i'm using "now" to run the bot. you can see the current deployment with the following command:
+
+now ls --all telegram-bot
+
+if i delete the old deployment (command: now rm [the url]) and add a new one (command: now), it works fine again.
+so maybe this? maybe not? what do i know? https://zeit.co/docs/deployment-types/node#deployment-inactivity
+
+anyway, to set the webhook:
+curl -F "url=[the now url]/new-message"  https://api.telegram.org/bot540539721:AAHzt6XkCTLwwupyqWRjdhTRiMCSrK7YRNU/setWebhook
